@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Deep blue-green gradient */
+    color: #f4f4f4; /* Light text for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #ff6600; /* Vibrant orange for contrast */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #203a43; /* Match with the background gradient */
+    color: #f4f4f4;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Form Styles */
+  form {
+    background: #ffffff; /* White form for clear contrast */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444; /* Dark label color */
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+    background: #f9f9f9; /* Light input background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: #ff6600; /* Vibrant orange focus effect */
+    box-shadow: 0 0 6px rgba(255, 102, 0, 0.8);
+  }
+  
+  button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ff6600, #ff9500); /* Orange gradient */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #ff9500, #ff6600);
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .actions button {
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  /* Video Container */
+  #video-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 720px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  #video {
+    width: 100%;
+    border: 4px solid #ff6600; /* Highlighted border */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  #openCameraBtn {
+    padding: 15px 25px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    #video {
+      width: 100%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
